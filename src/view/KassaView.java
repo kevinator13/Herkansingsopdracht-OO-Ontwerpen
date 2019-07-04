@@ -9,14 +9,14 @@ import javafx.stage.Stage;
 public class KassaView {
     private Stage stage = new Stage();
 
-    public KassaView(Pane artikelOverviewPane){
+    public KassaView(Pane kassaPane, Pane artikelOverviewPane, Pane instellingenPane){
         stage.setTitle("KASSA VIEW");
         stage.setResizable(false);
         stage.setX(20);
         stage.setY(20);
         Group root = new Group();
         Scene scene = new Scene(root, 750, 500);
-        BorderPane borderPane = new KassaMainPane(artikelOverviewPane);
+        BorderPane borderPane = new KassaMainPane(kassaPane, artikelOverviewPane, instellingenPane);
         borderPane.prefHeightProperty().bind(scene.heightProperty());
         borderPane.prefWidthProperty().bind(scene.widthProperty());
         root.getChildren().add(borderPane);

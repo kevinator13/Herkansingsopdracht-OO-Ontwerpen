@@ -7,11 +7,11 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 
 public class KassaMainPane extends BorderPane {
-    public KassaMainPane(Pane ArtikelOverviewPane){
+    public KassaMainPane(Pane kassaPane, Pane ArtikelOverviewPane, Pane instellingenPane){
         TabPane tabPane = new TabPane();
-        Tab kassaTab = new Tab("Kassa");
+        Tab kassaTab = new Tab("Kassa", kassaPane);
         Tab artikelTab = new Tab("Artikelen", ArtikelOverviewPane);
-        Tab instellingTab = new Tab("Instellingen");
+        Tab instellingTab = new Tab("Instellingen", instellingenPane);
         Tab logTab = new Tab("Log");
         tabPane.getTabs().add(kassaTab);
         tabPane.getTabs().add(artikelTab);
