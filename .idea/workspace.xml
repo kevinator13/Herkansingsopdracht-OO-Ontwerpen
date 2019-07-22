@@ -2,15 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/model/RekeningDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Herkansingsopdracht-OO-Ontwerpen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Herkansingsopdracht-OO-Ontwerpen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/application/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/application/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/application/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/application/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/controller/DBContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/controller/DBContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/ArtikelTXT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/ArtikelTXT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/ExcelPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/ExcelPlugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/TXTDBStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/TXTDBStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/artikel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/artikel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/save.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/db/save.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Artikel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Artikel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Artikel2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Artikel2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/DrempelKorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/DrempelKorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/DuursteKorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/DuursteKorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/GroepsKorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/GroepsKorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Klant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Klant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Korting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Korting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Rekening.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/model/Rekening.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/ArtikelOverviewPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/ArtikelOverviewPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/InstellingenPane$KortingEvaluation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/InstellingenPane$saveEvaluation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/InstellingenPane.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaMainPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaMainPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaPane$AddCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaPane$AddCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaPane$Afsluiten.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaPane$Afsluiten.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaPane$EditCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaPane$EditCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KassaView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KlantMainPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KlantMainPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KlantPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KlantPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KlantView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansingsopdracht-OO-Ontwerpen/view/KlantView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/db/artikel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db/artikel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/db/save.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db/save.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DBContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DBContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/ArtikelTXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/ArtikelTXT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/ExcelPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/ExcelPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/TXTDBStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/TXTDBStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Artikel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Artikel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Artikel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Artikel2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/DrempelKorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DrempelKorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/DuursteKorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DuursteKorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/GroepsKorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/GroepsKorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Klant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Korting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Korting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Rekening.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ArtikelOverviewPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ArtikelOverviewPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/InstellingenPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InstellingenPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/KassaMainPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/KassaMainPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/KassaPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/KassaPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/KassaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/KassaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/KlantMainPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/KlantMainPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/KlantPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/KlantPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/KlantView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/KlantView.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -67,47 +112,70 @@
     <session id="-784847464">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="8" />
+          <entry key="project.closed" value="52" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="10" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="4" />
-          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.14" value="6" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="10" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="3" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="4" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="JAVA/" value="1" />
+          <entry key="JAVA/db" value="2" />
+          <entry key="JAVA/model" value="3" />
+          <entry key="JAVA/view" value="2" />
+          <entry key="MODULES/mdl-Herkansingsopdracht-OO-Ontwerpen" value="1" />
+          <entry key="class" value="3" />
           <entry key="fxml" value="1" />
-          <entry key="java" value="116" />
-          <entry key="properties" value="1" />
-          <entry key="txt" value="5" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="398" />
+          <entry key="properties" value="11" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="116" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="1" />
+          <entry key="CLASS" value="3" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="398" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Properties" value="11" />
+          <entry key="UML" value="9" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="27" />
-          <entry key="java" value="4686" />
-          <entry key="txt" value="12" />
+          <entry key="dummy" value="36" />
+          <entry key="java" value="18201" />
+          <entry key="properties" value="89" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4686" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="JAVA" value="18201" />
+          <entry key="PLAIN_TEXT" value="56" />
+          <entry key="Properties" value="89" />
         </counts>
       </usages-collector>
     </session>
@@ -120,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/KassaPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2754">
-              <caret line="190" column="69" selection-start-line="190" selection-start-column="69" selection-end-line="190" selection-end-column="69" />
+            <state relative-caret-position="159">
+              <caret line="329" column="23" selection-start-line="329" selection-start-column="23" selection-end-line="329" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,87 +198,99 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/db/save.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/model/RekeningAlgemeneAfsluitlijn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/db/artikel.txt">
+        <entry file="file://$PROJECT_DIR$/src/model/RekeningAlgemeneBoodschap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#372#373#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/RekeningBTW.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#329#330#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/RekeningComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/RekeningDatum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/RekeningInstelling.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/RekeningZonderKorting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Verkoop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="99" column="25" lean-forward="true" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+              <folding>
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#1484#1485#0" expanded="true" />
+                <element signature="e#1528#1529#0" expanded="true" />
+                <element signature="e#1825#1826#0" expanded="true" />
+                <element signature="e#1862#1863#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/DrempelKorting.java">
+        <entry file="file://$PROJECT_DIR$/src/view/InstellingenPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/KlantView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/KlantMainPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Launcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Klant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/DuursteKorting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/KlantPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="340">
+              <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -224,6 +304,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -232,6 +313,20 @@
     <findStrings>
       <find>kassav</find>
       <find>Savable</find>
+      <find>btnCancel</find>
+      <find>rekening</find>
+      <find>rekenin</find>
+      <find>error</find>
+      <find>Verkoo</find>
+      <find>Verkoop</find>
+      <find>shop</find>
+      <find>korting</find>
+      <find>write()</find>
+      <find>local</find>
+      <find>system</find>
+      <find>save</find>
+      <find>swi</find>
+      <find>setstrat</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Kevin\Documents\GitHub\Herkansingsopdracht-OO-Ontwerpen</dir>
@@ -248,35 +343,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/db/DBStrategy.java" />
         <option value="$PROJECT_DIR$/src/application/Mainclass.java" />
-        <option value="$PROJECT_DIR$/src/controller/DBContext.java" />
-        <option value="$PROJECT_DIR$/src/db/TXTDBStrategy.java" />
-        <option value="$PROJECT_DIR$/resources/db/artikel.txt" />
-        <option value="$PROJECT_DIR$/src/view/ArtikelOverviewPane.java" />
-        <option value="$PROJECT_DIR$/src/db/ArtikelTXT.java" />
-        <option value="$PROJECT_DIR$/src/model/Artikel.java" />
-        <option value="$PROJECT_DIR$/src/model/Rekening.java" />
-        <option value="$PROJECT_DIR$/src/db/ExcelPlugin.java" />
         <option value="$PROJECT_DIR$/src/model/KortingProcent.java" />
         <option value="$PROJECT_DIR$/src/model/KortingMoney.java" />
-        <option value="$PROJECT_DIR$/src/model/Korting.java" />
         <option value="$PROJECT_DIR$/src/db/Savable2.java" />
+        <option value="$PROJECT_DIR$/src/model/ObserverKlant.java" />
+        <option value="$PROJECT_DIR$/src/view/KlantMainPane.java" />
+        <option value="$PROJECT_DIR$/src/model/Korting.java" />
+        <option value="$PROJECT_DIR$/src/model/RekeningAlgemeneAfsluitlijn.java" />
+        <option value="$PROJECT_DIR$/src/model/RekeningAlgemeneBoodschap.java" />
+        <option value="$PROJECT_DIR$/src/model/RekeningDecorator.java" />
+        <option value="$PROJECT_DIR$/src/model/Rekening.java" />
+        <option value="$PROJECT_DIR$/src/model/RekeningBTW.java" />
+        <option value="$PROJECT_DIR$/src/model/RekeningZonderKorting.java" />
+        <option value="$PROJECT_DIR$/src/model/RekeningInstelling.java" />
+        <option value="$PROJECT_DIR$/src/model/VerkoopState.java" />
+        <option value="$PROJECT_DIR$/src/model/VerkoopOnHold.java" />
+        <option value="$PROJECT_DIR$/src/model/VerkoopNew.java" />
+        <option value="$PROJECT_DIR$/src/model/VerkoopBetaald.java" />
         <option value="$PROJECT_DIR$/src/view/KassaMainPane.java" />
+        <option value="$PROJECT_DIR$/src/view/KlantView.java" />
         <option value="$PROJECT_DIR$/src/view/KassaView.java" />
-        <option value="$PROJECT_DIR$/src/model/GroepsKorting.java" />
+        <option value="$PROJECT_DIR$/src/model/RekeningComponent.java" />
+        <option value="$PROJECT_DIR$/src/model/KortingSoort.java" />
+        <option value="$PROJECT_DIR$/src/model/Artikel.java" />
         <option value="$PROJECT_DIR$/src/model/Artikel2.java" />
         <option value="$PROJECT_DIR$/src/model/DuursteKorting.java" />
-        <option value="$PROJECT_DIR$/src/view/KlantView.java" />
-        <option value="$PROJECT_DIR$/src/view/KlantMainPane.java" />
-        <option value="$PROJECT_DIR$/src/view/KlantPane.java" />
-        <option value="$PROJECT_DIR$/src/view/InstellingenPane.java" />
         <option value="$PROJECT_DIR$/src/model/Klant.java" />
+        <option value="$PROJECT_DIR$/src/view/ArtikelOverviewPane.java" />
+        <option value="$PROJECT_DIR$/src/controller/DBContext.java" />
+        <option value="$PROJECT_DIR$/src/db/ExcelPlugin.java" />
+        <option value="$PROJECT_DIR$/resources/db/rekening.properties" />
+        <option value="$PROJECT_DIR$/src/model/GroepsKorting.java" />
+        <option value="$PROJECT_DIR$/src/model/DrempelKorting.java" />
+        <option value="$PROJECT_DIR$/resources/db/artikel.txt" />
+        <option value="$PROJECT_DIR$/src/model/PropertiesRekening.java" />
+        <option value="$PROJECT_DIR$/src/model/KortingFactory.java" />
+        <option value="$PROJECT_DIR$/resources/db/save.properties" />
+        <option value="$PROJECT_DIR$/src/db/ExcelDBStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/RekeningDatum.java" />
+        <option value="$PROJECT_DIR$/src/db/ArtikelTXT.java" />
+        <option value="$PROJECT_DIR$/src/db/TXTDBStrategy.java" />
+        <option value="$PROJECT_DIR$/src/view/KlantPane.java" />
+        <option value="$PROJECT_DIR$/src/db/ArtikelExcel.java" />
+        <option value="$PROJECT_DIR$/src/view/LogPane.java" />
+        <option value="$PROJECT_DIR$/src/db/StrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/application/Controller.java" />
         <option value="$PROJECT_DIR$/src/application/Launcher.java" />
         <option value="$PROJECT_DIR$/src/view/KassaPane.java" />
-        <option value="$PROJECT_DIR$/src/model/DrempelKorting.java" />
+        <option value="$PROJECT_DIR$/src/model/Verkoop.java" />
+        <option value="$PROJECT_DIR$/src/view/InstellingenPane.java" />
       </list>
     </option>
   </component>
@@ -293,9 +410,9 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="950" />
-    <option name="width" value="979" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -378,7 +495,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562169309117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563814352383" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jxl-2.6.12.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -387,6 +504,9 @@
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="model" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="view" />
     </key>
@@ -534,17 +654,46 @@
       <workItem from="1562145846768" duration="10784000" />
       <workItem from="1562167112642" duration="2189000" />
       <workItem from="1562172296328" duration="360000" />
+      <workItem from="1562248887799" duration="11000" />
+      <workItem from="1562601439801" duration="2813000" />
+      <workItem from="1562607932226" duration="731000" />
+      <workItem from="1562690044142" duration="697000" />
+      <workItem from="1562757777938" duration="6698000" />
+      <workItem from="1562858395833" duration="3993000" />
+      <workItem from="1562870947800" duration="7711000" />
+      <workItem from="1562945104036" duration="4274000" />
+      <workItem from="1562956185778" duration="3167000" />
+      <workItem from="1562964405913" duration="2771000" />
+      <workItem from="1563005820949" duration="8299000" />
+      <workItem from="1563019216530" duration="1871000" />
+      <workItem from="1563021140191" duration="123000" />
+      <workItem from="1563094966196" duration="734000" />
+      <workItem from="1563095877600" duration="9745000" />
+      <workItem from="1563123717902" duration="1475000" />
+      <workItem from="1563193021900" duration="7833000" />
+      <workItem from="1563266323507" duration="6464000" />
+      <workItem from="1563290702071" duration="1388000" />
+      <workItem from="1563373691487" duration="6891000" />
+      <workItem from="1563391909462" duration="4727000" />
+      <workItem from="1563460568725" duration="5014000" />
+      <workItem from="1563536902027" duration="2535000" />
+      <workItem from="1563539555552" duration="2385000" />
+      <workItem from="1563553137944" duration="933000" />
+      <workItem from="1563558527808" duration="4414000" />
+      <workItem from="1563647579419" duration="9534000" />
+      <workItem from="1563796166307" duration="1843000" />
+      <workItem from="1563804254480" duration="10373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78342000" />
+    <option name="totallyTimeSpent" value="197789000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="760" y="0" width="783" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.4163209" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.31208053" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -552,9 +701,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25035766" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3982808" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24929178" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -563,8 +712,8 @@
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32474965" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3243626" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -589,74 +738,57 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="shopList.get(0)" />
+        <watch expression="shopList" language="JAVA" />
+        <watch expression="shopList" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/com/sun/javafx/application/PlatformImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/db/Savable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3893">
-          <caret line="293" selection-start-line="293" selection-end-line="293" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/NumberFormatException.java">
+    <entry file="file://$PROJECT_DIR$/src/model/VerkoopBetaald.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Integer.java">
+    <entry file="file://$PROJECT_DIR$/src/model/VerkoopNew.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9877">
-          <caret line="614" selection-start-line="614" selection-end-line="614" />
+        <state relative-caret-position="68">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/model/VerkoopOnHold.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="386" selection-start-line="386" selection-end-line="386" />
+        <state relative-caret-position="68">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/Parent.java">
+    <entry file="file://$PROJECT_DIR$/src/model/VerkoopState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/layout/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/layout/GridPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="729" selection-start-line="729" selection-end-line="729" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/TableView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="842" column="57" selection-start-line="842" selection-start-column="57" selection-end-line="842" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="819" column="20" lean-forward="true" selection-start-line="819" selection-start-column="20" selection-end-line="819" selection-end-column="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Herkansingsopdracht-OO-Ontwerpen.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/artikel.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -665,221 +797,368 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Artikel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ArtikelOverviewPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/GroepsKorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="700" column="18" selection-start-line="700" selection-start-column="18" selection-end-line="700" selection-end-column="18" />
+          <folding>
+            <element signature="e#30663#30664#0" expanded="true" />
+            <element signature="e#30720#30721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/db/rekening.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/db/artikel.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/model/RekeningDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="187">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Rekening.java">
+    <entry file="jar://$USER_HOME$/Downloads/jxl-2.6.12.jar!/jxl/Workbook.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="150">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/jxl-2.6.12.jar!/jxl/read/biff/CompoundFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/jxl-2.6.12.jar!/jxl/read/biff/File.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/KlantPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/cell/PropertyValueFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="112" column="11" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
+          <folding>
+            <element signature="e#4183#4184#0" expanded="true" />
+            <element signature="e#4223#4224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/LogPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/db/save.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/ExcelPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/ArtikelTXT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="340">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/DBContext.java">
+    <entry file="file://$PROJECT_DIR$/src/db/DBStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="68">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/ExcelDBStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/TXTDBStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-473">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="210">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/StrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Mainclass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="170">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="117" column="58" selection-start-line="117" selection-start-column="58" selection-end-line="117" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/DBContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+          <folding>
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="66" column="56" lean-forward="true" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/ArtikelExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Artikel2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/DrempelKorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/DuursteKorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Klant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Korting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/ExcelPlugin.java">
+    <entry file="file://$PROJECT_DIR$/src/model/KortingFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/DBStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ArtikelOverviewPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/Savable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/Savable2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/KassaView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/KassaMainPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/GroepsKorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="36" column="85" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Artikel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Artikel2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/InstellingenPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="167" column="26" selection-start-line="167" selection-start-column="26" selection-end-line="167" selection-end-column="26" />
+        <state relative-caret-position="-116">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/KortingSoort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/PropertiesRekening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-694">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Rekening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RekeningAlgemeneAfsluitlijn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RekeningAlgemeneBoodschap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RekeningBTW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RekeningComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RekeningDatum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RekeningInstelling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RekeningZonderKorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/KassaPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2754">
-          <caret line="190" column="69" selection-start-line="190" selection-start-column="69" selection-end-line="190" selection-end-column="69" />
+        <state relative-caret-position="159">
+          <caret line="329" column="23" selection-start-line="329" selection-start-column="23" selection-end-line="329" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/db/save.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/db/artikel.txt">
+    <entry file="file://$PROJECT_DIR$/src/model/Verkoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/KlantView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/KlantMainPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="278">
+          <caret line="99" column="25" lean-forward="true" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1825#1826#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Klant.java">
+    <entry file="file://$PROJECT_DIR$/src/view/InstellingenPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="340">
+          <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DuursteKorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/KlantPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DrempelKorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
         </state>
       </provider>
     </entry>

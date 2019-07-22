@@ -1,32 +1,30 @@
 package application;
 
 import controller.DBContext;
-import db.ArtikelTXT;
-import db.Savable;
-import db.Savable2;
+import db.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.Group;
-import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import model.Artikel2;
-import model.Klant;
-import model.Korting;
+import model.*;
 import view.*;
 
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Observable;
+import java.util.*;
 
 public class Launcher {
+    private Controller controller;
     private DBContext artikelDbContext;
     private ObservableList<Savable> artikels = FXCollections.observableArrayList(new ArrayList<>());
     private ObservableList<Savable2> shop = FXCollections.observableArrayList(new ArrayList<>());
     private ObservableList<Korting> kortings = FXCollections.observableArrayList(new ArrayList<>());
-private Klant klant = new Klant();
-    private Klant klant2 = new Klant();
+
+    private ObservableList<Verkoop> verkoops = FXCollections.observableArrayList(new ArrayList<>());
+    private Klant klant = new Klant();
+
+    private ObservableList<RekeningInstelling> rekenings = FXCollections.observableArrayList(new ArrayList<>());
+
+
+
     public Launcher()
     {
 
@@ -34,44 +32,39 @@ private Klant klant = new Klant();
 
     public void start(Stage primaryStage)
     {
+
+
+
         try {
             this.artikelDbContext = new DBContext();
 
-            this.artikelDbContext.setStrategy(new ArtikelTXT( artikels));
+            this.controller = new Controller(artikelDbContext, artikels, shop, kortings, verkoops, rekenings);
 
-            artikelDbContext.read();
 
-            artikels = artikelDbContext.getReadObjects();
-            System.out.println(artikels);
+            this.controller.readArtikels();
+
+            artikels = controller.getDbContext().getReadObjects();
+
+
+
 
 
             DBContext context = new DBContext();
             if(artikels == null || artikels.size() == 0) {context.run();}
 
-            KassaPane kassaPane = new KassaPane(artikels, shop, kortings);
+            this.controller = new Controller(artikelDbContext, artikels, shop, kortings, verkoops, rekenings);
+
+            KassaPane kassaPane = new KassaPane(controller, klant);
             ArtikelOverviewPane artikelOverviewPane = new ArtikelOverviewPane(artikels);
-InstellingenPane instellingenPane = new InstellingenPane(shop, kortings);
+            InstellingenPane instellingenPane = new InstellingenPane(this.controller);
+            LogPane logPane = new LogPane(verkoops);
 
 
 
 
 
-
-            Group root = new Group();
-            Scene scene = new Scene(root, 750, 400);
-
-            BorderPane borderPane = new KassaMainPane(kassaPane, artikelOverviewPane, instellingenPane);
-
-            borderPane.prefHeightProperty().bind(scene.heightProperty());
-            borderPane.prefWidthProperty().bind(scene.widthProperty());
-
-            root.getChildren().add(borderPane);
-
-            primaryStage.setScene(scene);
-            primaryStage.sizeToScene();
-
-            primaryStage.show();
-            KlantView klantView = new KlantView(shop, kortings);
+            KassaView kassaView= new KassaView(primaryStage, kassaPane, artikelOverviewPane, instellingenPane, logPane);
+            KlantView klantView = new KlantView(shop, kortings, klant);
 
         } catch (Exception e) {
             e.printStackTrace();

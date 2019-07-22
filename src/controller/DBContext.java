@@ -1,13 +1,16 @@
 package controller;
 
-import db.ArtikelTXT;
-import db.DBStrategy;
-import db.Savable;
+import db.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.Artikel;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Properties;
 
 public class DBContext implements DBStrategy {
     private DBStrategy strategy;
@@ -49,9 +52,13 @@ public class DBContext implements DBStrategy {
         artikels.add(c3);
 
 
+
+
         context.setStrategy(new ArtikelTXT(artikels));
         context.write();
         context.read();
 
     }
+
+
 }

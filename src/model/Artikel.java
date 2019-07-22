@@ -25,6 +25,11 @@ public class Artikel implements Savable {
         this.code = Integer.parseInt(code);
     }
 
+    public void  verlaagVoorraad(int aantal){
+        voorraad -= aantal;
+
+    }
+
     public void setOmschrijving(String omschrijving) {
         this.omschrijving = omschrijving;
     }

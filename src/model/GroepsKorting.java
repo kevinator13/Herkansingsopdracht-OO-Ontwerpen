@@ -8,15 +8,12 @@ import java.util.ArrayList;
 
 public class GroepsKorting implements Korting  {
     private Double korting;
-    private ObservableList<Savable2> list;
-    private ArrayList<String> omschrijvinglist;
-
-
     private boolean procent;
+    private String groep;
 
-    public GroepsKorting(Double korting, ObservableList<Savable2> list, String soort) {
+    public GroepsKorting(Double korting, String soort, String groep) {
         this.korting = korting;
-        this.list = list;
+        this.groep = groep;
         if (soort.equals("Procent")){
             procent = true;
         }
@@ -28,17 +25,17 @@ public class GroepsKorting implements Korting  {
 
 
     @Override
-    public double kortingEuro() {
+    public double kortingEuro(ObservableList<Savable2> list) {
         double terug = 0;
         for (Savable2 artikel: list){
-            for (String omschrijving: omschrijvinglist){
-                if (((Artikel2)artikel).getOmschrijving().equals(omschrijving)){
-                    if (procent){
-                        terug += (((Artikel2)artikel).getVerkoopprijs()/100)*korting;
-                    } else {
-                        terug += (korting * ((Artikel2)artikel).getAantal());
-                    }
+            if (((Artikel2)artikel).getGroep().equals(this.groep)){
+
+                if (procent){
+                    terug += (((Artikel2)artikel).getVerkoopprijs()/100)*korting;
+                } else {
+                    terug += (korting * ((Artikel2)artikel).getAantal());
                 }
+
             }
         }
         return terug;

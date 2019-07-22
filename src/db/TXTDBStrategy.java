@@ -2,6 +2,7 @@ package db;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import model.Artikel;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -25,7 +26,9 @@ public abstract class TXTDBStrategy implements DBStrategy {
         int counter =0;
         while (counter <getObjectsToWrite().size())
         {
-            writer.print(getObjectsToWrite().get(counter));
+            Artikel object = (Artikel)getObjectsToWrite().get(counter);
+            String text = object.getCode() + "," + object.getOmschrijving() + "," + object.getArtikelgroep() + "," + object.getVerkoopprijs() + "," + object.getVoorraad();
+            writer.println(text);
             counter++;
         }
         writer.close();
@@ -47,7 +50,7 @@ public abstract class TXTDBStrategy implements DBStrategy {
 
         try {
             Scanner scannerFile;
-            System.out.println(file);
+
             scannerFile = new Scanner(file);
             while (scannerFile.hasNextLine()) {
                 String lijn = scannerFile.nextLine();

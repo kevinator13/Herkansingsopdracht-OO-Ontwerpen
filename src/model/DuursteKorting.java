@@ -7,11 +7,11 @@ import javafx.collections.ObservableList;
 public class DuursteKorting implements Korting  {
     private Double korting;
     private boolean procent;
-    private ObservableList<Savable2> list;
 
-    public DuursteKorting(Double korting, ObservableList<Savable2> artikels, String soort) {
+
+    public DuursteKorting(Double korting, String soort) {
         this.korting = korting;
-        list = artikels;
+
         if (soort.equals("Procent")){
             procent = true;
         }
@@ -23,13 +23,13 @@ public class DuursteKorting implements Korting  {
 
 
     @Override
-    public double kortingEuro() {
-        Double terug = null;
+    public double kortingEuro(ObservableList<Savable2> artikels) {
+        Double terug;
         Artikel artikel1 = new Artikel();
         artikel1.setVerkoopprijs("0");
         Artikel2 artikel2 = new Artikel2(artikel1);
 
-        for (Savable2 artikel:list) {
+        for (Savable2 artikel:artikels) {
             if(((Artikel2)artikel).getPrijs()>=(artikel2.getPrijs())){
                 artikel2 = (Artikel2)artikel;
             }

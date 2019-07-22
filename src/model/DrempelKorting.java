@@ -7,13 +7,13 @@ import javafx.collections.ObservableList;
 public class DrempelKorting implements Korting  {
     private Double korting;
     private Double regel;
-    private ObservableList<Savable2> list;
+
     private boolean procent;
 
-    public DrempelKorting(Double korting, ObservableList<Savable2> artikels, String soort) {
+    public DrempelKorting(Double korting, String soort, String regel) {
         this.korting = korting;
-        list = artikels;
-        this.regel = 100.0;
+
+        this.regel = Double.parseDouble(regel);
         if (soort.equals("Procent")){
             procent = true;
         }
@@ -25,20 +25,21 @@ public class DrempelKorting implements Korting  {
 
 
     @Override
-    public double kortingEuro() {
+    public double kortingEuro(ObservableList<Savable2> artikels) {
         double terug = 0;
-
-        for (Savable2 artikel:list) {
-            if(((Artikel2)artikel).getVerkoopprijs()>=(regel)){
-                if (procent){
-                    terug += ((((Artikel2)artikel).getVerkoopprijs()/100)*korting);
-                }else {
-                    terug += korting ;
-                }
-
-            }
-
+        double kortingterug = 0;
+        for (Savable2 artikel:artikels) {
+            terug += ((Artikel2)artikel).getVerkoopprijs();
         }
-        return terug;
+        if (terug>=regel){
+            if (procent){
+                kortingterug = (terug/100)*this.korting;
+            }else {
+                kortingterug = this.korting;
+            }
+        } else {
+            kortingterug = 0;
+        }
+        return kortingterug;
     }
 }

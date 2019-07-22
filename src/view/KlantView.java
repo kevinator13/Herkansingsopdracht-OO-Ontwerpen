@@ -10,6 +10,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import model.Artikel;
 import model.Artikel2;
+import model.Klant;
 import model.Korting;
 
 public class KlantView {
@@ -17,7 +18,7 @@ public class KlantView {
     private TableView table;
     private ObservableList<Savable2> shoppingList;
 
-    public KlantView(ObservableList<Savable2> shoppingcar, ObservableList<Korting> kortings){
+    public KlantView(ObservableList<Savable2> shoppingcar, ObservableList<Korting> kortings, Klant klant){
 
 
         stage.setTitle("KLANT VIEW");
@@ -27,7 +28,7 @@ public class KlantView {
         Group root = new Group();
 
         Scene scene = new Scene(root, 500, 500);
-        BorderPane borderPane = new KlantMainPane(shoppingcar, kortings);
+        BorderPane borderPane = new KlantMainPane(shoppingcar, kortings, klant);
         borderPane.prefHeightProperty().bind(scene.heightProperty());
         borderPane.prefWidthProperty().bind(scene.widthProperty());
         root.getChildren().add(borderPane);
