@@ -1,7 +1,6 @@
 package db;
 
 
-import application.Controller;
 import javafx.collections.ObservableList;
 
 public class StrategyFactory {

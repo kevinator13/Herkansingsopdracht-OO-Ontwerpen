@@ -1,5 +1,6 @@
 package view;
 
+import controller.Controller;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.control.Label;
@@ -11,10 +12,12 @@ import model.Verkoop;
 
 public class LogPane extends GridPane {
     private TableView table;
-    private ObservableList<Verkoop> verkoops;
+    private Controller controller;
 
-    public LogPane(ObservableList<Verkoop> verkoops) {
-        this.verkoops = verkoops;
+
+    public LogPane(Controller controller) {
+        this.controller = controller;
+
         this.setPadding(new Insets(5, 5, 5, 5));
         this.setVgap(5);
         this.setHgap(5);
@@ -52,6 +55,6 @@ public class LogPane extends GridPane {
         this.add(table, 0, 1, 2, 6);
         //----------------------------------------------------------------------
 
-        table.setItems(this.verkoops);
+        table.setItems(this.controller.getVerkoops());
     }
 }

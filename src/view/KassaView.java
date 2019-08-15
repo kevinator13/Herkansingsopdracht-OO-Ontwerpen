@@ -7,10 +7,10 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class KassaView {
-    private Stage stage;
+
 
     public KassaView(Stage stage, Pane kassaPane, Pane artikelOverviewPane, Pane instellingenPane, Pane logPane){
-        this.stage = stage;
+
         stage.setTitle("KASSA VIEW");
         stage.setResizable(false);
         stage.setX(20);

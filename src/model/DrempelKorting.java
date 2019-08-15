@@ -33,7 +33,7 @@ public class DrempelKorting implements Korting  {
         }
         if (terug>=regel){
             if (procent){
-                kortingterug = (terug/100)*this.korting;
+                kortingterug = (terug)*this.korting/100;
             }else {
                 kortingterug = this.korting;
             }

@@ -1,6 +1,6 @@
 package view;
 
-import application.Controller;
+import controller.Controller;
 import db.Savable;
 import db.Savable2;
 import javafx.collections.ObservableList;
@@ -23,13 +23,13 @@ public class KassaPane extends GridPane {
 private Controller controller;
     private ComboBox comboBox;
     private Button btnOK, btnAfsluiten, btnBetalen, btnAnuleren, btnSetOnHold;
-    private TextField titleField, descriptionField;
+    private TextField titleField;
 
     private ObservableList<Savable> artikelList;
     private ObservableList<Savable2> shopList;
     private ObservableList<Korting> kortings;
-    private ObservableList<RekeningInstelling>rekenings;
-    private ObservableList<Verkoop>verkoops;
+
+
     private TableView table;
     private Rekening rekening;
     private Label totaleprijs;
@@ -38,11 +38,12 @@ private Controller controller;
     private Klant klant;
     private Verkoop verkoop;
     private Verkoop verkoopOnHold;
+    private ObservableList<Verkoop>verkoops;
 
 
     public KassaPane(Controller controller, Klant klant) {
         this.controller = controller;
-        this.rekenings = controller.getRekenings();
+
         this.artikelList= controller.getArtikels();
         this.shopList= controller.getShop();
         this.kortings = controller.getKortings();

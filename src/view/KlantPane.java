@@ -1,9 +1,8 @@
 package view;
 
-import db.Savable;
+
 import db.Savable2;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
+
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -11,23 +10,21 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
-import model.Artikel;
 import model.Artikel2;
 import model.Klant;
 import model.Korting;
-
-import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
-public class KlantPane extends GridPane implements Observer {
+
+import javafx.scene.layout.GridPane;
+
+public class KlantPane extends GridPane implements Observer  {
     private TableView table;
     private ObservableList<Savable2> artikelList;
     private ObservableList<Korting> kortings;
 
-    private Klant klant;
+
     private Label totaleprijs;
     private double prijstotaal = 0.0;
     private Label kortingprijs;
@@ -35,8 +32,8 @@ public class KlantPane extends GridPane implements Observer {
 
     public KlantPane(ObservableList<Savable2> artikelList, ObservableList<Korting> kortings, Klant klant) {
         this.artikelList = artikelList;
-        this.klant = klant;
-this.kortings = kortings;
+
+        this.kortings = kortings;
         klant.addObserver(this);
 
         artikelList.addListener(new ListChangeListener<Savable2>() {

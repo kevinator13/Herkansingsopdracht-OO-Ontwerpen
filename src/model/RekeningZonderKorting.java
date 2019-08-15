@@ -1,6 +1,6 @@
 package model;
 
-import javafx.collections.ObservableList;
+
 
 public class RekeningZonderKorting extends RekeningDecorator {
 

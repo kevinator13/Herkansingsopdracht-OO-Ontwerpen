@@ -1,8 +1,8 @@
 package view;
 
+import controller.Controller;
 import db.Savable;
-import db.Savable2;
-import javafx.collections.FXCollections;
+
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.SortedList;
@@ -12,22 +12,18 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
-import model.Artikel;
-import model.Artikel2;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
 
 
 public class ArtikelOverviewPane extends GridPane {
     private TableView table;
-    private ObservableList<Savable> artikelList;
+    private Controller controller;
 
-    public ArtikelOverviewPane(ObservableList<Savable> artikelList) {
-        this.artikelList = artikelList;
-        this.artikelList.addListener(new ListChangeListener<Savable>() {
+
+    public ArtikelOverviewPane(Controller controller) {
+        this.controller = controller;
+        ObservableList<Savable> artikelList = this.controller.getArtikels();
+        artikelList.addListener(new ListChangeListener<Savable>() {
             @Override
             public void onChanged(Change<? extends Savable> changed) {
                 table.refresh();

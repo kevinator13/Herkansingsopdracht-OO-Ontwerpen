@@ -5,18 +5,18 @@ import javafx.collections.ObservableList;
 import jxl.read.biff.BiffException;
 import jxl.write.WriteException;
 import model.Artikel;
-import sun.plugin2.main.server.Plugin;
+
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class ExcelDBStrategy implements DBStrategy {
-    ExcelPlugin plugin = new ExcelPlugin();
-    File file = new File(getWriteFile());
+    private ExcelPlugin plugin = new ExcelPlugin();
+    private File file = new File(getWriteFile());
 
     private ObservableList<Savable> savables = FXCollections.observableArrayList(new ArrayList<>());
-    private InputStream inputStream;
+
 
 
 
@@ -36,7 +36,7 @@ public abstract class ExcelDBStrategy implements DBStrategy {
 
     @Override
     public void read() {
-        inputStream = getClass().getClassLoader().getResourceAsStream(getFile());
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(getFile());
         file = new File(getWriteFile());
         if(file.exists() && !file.isDirectory()){
             try {

@@ -31,7 +31,7 @@ public class GroepsKorting implements Korting  {
             if (((Artikel2)artikel).getGroep().equals(this.groep)){
 
                 if (procent){
-                    terug += (((Artikel2)artikel).getVerkoopprijs()/100)*korting;
+                    terug += (((Artikel2)artikel).getVerkoopprijs())*korting/100;
                 } else {
                     terug += (korting * ((Artikel2)artikel).getAantal());
                 }

@@ -1,35 +1,30 @@
 package view;
 
-import application.Controller;
-import db.Savable;
-import db.Savable2;
+import controller.Controller;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
 import model.*;
 
-import javax.swing.*;
 import java.io.*;
 import java.util.*;
 
 public class InstellingenPane extends GridPane {
     private Controller controller;
-    private HashMap<String, String> maptrue;
-    private HashMap<String, String> maptext;
-    private ObservableList<Korting> kortings;
-    private ObservableList<RekeningInstelling> rekenings;
+    private HashMap<String, String> maptrue; //  weg
+    private HashMap<String, String> maptext; //  weg
+    private ObservableList<Korting> kortings; //  weg
+
     private TextField kortingField;
     private TextField extraKortingField;
     private Button btnOK;
     private Button submitButton;
-    private ArrayList<String> list;
-    private Properties properties;
+
+    private Properties properties; // Misschien beter in Property klasse
     private ToggleGroup statementGroup;
-    private RadioButton answer;
+    private RadioButton answer; //  weg mischien
     private Label questionField;
     private Label kortingopslaan;
     private Label rekeningopslaan;
@@ -47,11 +42,11 @@ public class InstellingenPane extends GridPane {
         this.maptrue = this.controller.getMaptrue();
         this.maptext = this.controller.getMaptext();
         this.kortings =this.controller.getKortings();
-        this.rekenings = this.controller.getRekenings();
-        list = new ArrayList<>();
+
+        ArrayList<String> list = new ArrayList<>();
         list.add("TXT");
         list.add("EXCEL");
-        String prop = controller.getProperty().toUpperCase();
+        String prop = controller.getOutputProperty().toUpperCase();
         questionField= new Label();
         questionField.setText("");
         add(questionField,1,7);
@@ -114,7 +109,7 @@ public class InstellingenPane extends GridPane {
 
 
         this.myButtonGroup = new ArrayList<>();
-        List<JCheckBox> buttons = new ArrayList<>();
+
         ArrayList<String> listtext = this.controller.getTextRekening();
         for (int i = 0; i<listtext.size(); i++)
         {
@@ -170,7 +165,7 @@ public class InstellingenPane extends GridPane {
         btnSaveRekening.setOnAction(saveAction);
     }
 
-
+    //  waarom private klasse vanonder
     private class saveEvaluation implements EventHandler<ActionEvent> {
         @Override
         public void handle(ActionEvent event) {

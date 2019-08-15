@@ -1,7 +1,8 @@
-package application;
+package controller;
 
 import controller.DBContext;
 import db.*;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.*;
 
@@ -12,26 +13,23 @@ import java.util.Properties;
 
 public class Controller {
     private DBContext dbContext;
-    private ObservableList<Savable> artikels;
-    private ObservableList<Savable2> shop;
-    private ObservableList<Korting> kortings;
-    private ObservableList<Verkoop> verkoops;
-    private ObservableList<RekeningInstelling> rekenings;
+    private ObservableList<Savable> artikels = FXCollections.observableArrayList(new ArrayList<>());
+    private ObservableList<Savable2> shoplist = FXCollections.observableArrayList(new ArrayList<>());
+    private ObservableList<Korting> kortings = FXCollections.observableArrayList(new ArrayList<>());
+    private ObservableList<Verkoop> verkoops = FXCollections.observableArrayList(new ArrayList<>());
+
 
 
 
     private PropertiesRekening properties = new PropertiesRekening();
 
 
-    public Controller(DBContext artikelDbContext, ObservableList<Savable> artikels, ObservableList<Savable2> shop, ObservableList<Korting> kortings, ObservableList<Verkoop> verkoops, ObservableList<RekeningInstelling> rekenings) {
-        this.dbContext = artikelDbContext;
-        this.artikels = artikels;
-        this.shop = shop;
-        this.kortings = kortings;
-        this.verkoops = verkoops;
-        this.rekenings = rekenings;
-        this.readPropertyRekening();
+    public Controller() {
+        this.dbContext = new DBContext();
+        this.readArtikels();
 
+        artikels = this.getDbContext().getReadObjects();
+        properties.readPropertyRekening();
     }
 
     public ObservableList<Savable> getArtikels() {
@@ -39,7 +37,7 @@ public class Controller {
     }
 
     public ObservableList<Savable2> getShop() {
-        return shop;
+        return shoplist;
     }
 
     public ObservableList<Korting> getKortings() {
@@ -50,9 +48,7 @@ public class Controller {
         return verkoops;
     }
 
-    public ObservableList<RekeningInstelling> getRekenings() {
-        return rekenings;
-    }
+
 
     public HashMap<String, String> getMaptrue() {
         return properties.getMaptrue();
@@ -64,8 +60,8 @@ public class Controller {
     public DBContext getDbContext() {
         return dbContext;
     }
-
-    public String getProperty() {
+    // ROBIN beter naam && misschien beter in PropertiesRekening.
+    public String getOutputProperty() {
         Properties properties = new Properties();
         InputStream is;
         File file;
@@ -91,10 +87,7 @@ public class Controller {
         return evaluationMode;
     }
 
-    public void readPropertyRekening() {
-        properties.readPropertyRekening();
 
-    }
     public ArrayList<String> getTextRekening(){
         return properties.getTextRekening();
     }
@@ -103,35 +96,35 @@ public class Controller {
         properties.writePropertiesRekening(listtext);
     }
 
-    public void writeArtikels(){
-
-
-        StrategyFactory strategyFactory = StrategyFactory.getInstance();
-        dbContext.setStrategy(strategyFactory.getStrategy(getProperty(), artikels));
-
-
-        dbContext.write();
-    }
-
     public void readArtikels(){
         StrategyFactory strategyFactory = StrategyFactory.getInstance();
-        dbContext.setStrategy(strategyFactory.getStrategy(getProperty(), artikels));
+        dbContext.setStrategy(strategyFactory.getStrategy(getOutputProperty(), artikels));
 
 
         dbContext.read();
     }
 
+    public void writeArtikels(){
+
+
+        StrategyFactory strategyFactory = StrategyFactory.getInstance();
+        dbContext.setStrategy(strategyFactory.getStrategy(getOutputProperty(), artikels));
+
+
+        dbContext.write();
+    }
+
     public Double getKortingsprijs() {
         Double kortingprijs = 0.0;
         for (Korting korting: kortings) {
-            kortingprijs += korting.kortingEuro(this.shop);
+            kortingprijs += korting.kortingEuro(this.shoplist);
         }
         return kortingprijs;
     }
 
     public Double getprijstotaal() {
         Double prijs = 0.0;
-        for (Savable2 savable2: shop) {
+        for (Savable2 savable2: shoplist) {
             prijs += ((Artikel2)savable2).getVerkoopprijs();
         }
         return prijs;

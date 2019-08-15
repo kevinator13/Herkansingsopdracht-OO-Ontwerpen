@@ -36,7 +36,7 @@ public class DuursteKorting implements Korting  {
 
         }
         if (procent){
-            terug =  (artikel2.getVerkoopprijs()/100)*korting;
+            terug =  (artikel2.getVerkoopprijs())*korting/100;
         }else {
             terug = korting * artikel2.getAantal();
         }

@@ -1,5 +1,6 @@
 package application;
 
+import controller.Controller;
 import controller.DBContext;
 import db.*;
 import javafx.collections.FXCollections;
@@ -14,14 +15,14 @@ import java.util.*;
 public class Launcher {
     private Controller controller;
     private DBContext artikelDbContext;
-    private ObservableList<Savable> artikels = FXCollections.observableArrayList(new ArrayList<>());
-    private ObservableList<Savable2> shop = FXCollections.observableArrayList(new ArrayList<>());
-    private ObservableList<Korting> kortings = FXCollections.observableArrayList(new ArrayList<>());
+    private ObservableList<Savable> artikels;
+    private ObservableList<Savable2> shop;
+    private ObservableList<Korting> kortings;
 
-    private ObservableList<Verkoop> verkoops = FXCollections.observableArrayList(new ArrayList<>());
+    private ObservableList<Verkoop> verkoops;
     private Klant klant = new Klant();
+// alles in controller
 
-    private ObservableList<RekeningInstelling> rekenings = FXCollections.observableArrayList(new ArrayList<>());
 
 
 
@@ -36,14 +37,9 @@ public class Launcher {
 
 
         try {
-            this.artikelDbContext = new DBContext();
+            this.controller = new Controller();
 
-            this.controller = new Controller(artikelDbContext, artikels, shop, kortings, verkoops, rekenings);
-
-
-            this.controller.readArtikels();
-
-            artikels = controller.getDbContext().getReadObjects();
+            artikels = controller.getArtikels();
 
 
 
@@ -52,19 +48,19 @@ public class Launcher {
             DBContext context = new DBContext();
             if(artikels == null || artikels.size() == 0) {context.run();}
 
-            this.controller = new Controller(artikelDbContext, artikels, shop, kortings, verkoops, rekenings);
 
-            KassaPane kassaPane = new KassaPane(controller, klant);
-            ArtikelOverviewPane artikelOverviewPane = new ArtikelOverviewPane(artikels);
+
+            KassaPane kassaPane = new KassaPane(this.controller, klant);
+            ArtikelOverviewPane artikelOverviewPane = new ArtikelOverviewPane(this.controller);
             InstellingenPane instellingenPane = new InstellingenPane(this.controller);
-            LogPane logPane = new LogPane(verkoops);
+            LogPane logPane = new LogPane(this.controller);
 
 
 
 
 
-            KassaView kassaView= new KassaView(primaryStage, kassaPane, artikelOverviewPane, instellingenPane, logPane);
-            KlantView klantView = new KlantView(shop, kortings, klant);
+            new KassaView(primaryStage, kassaPane, artikelOverviewPane, instellingenPane, logPane);
+            new KlantView(this.controller, klant);
 
         } catch (Exception e) {
             e.printStackTrace();

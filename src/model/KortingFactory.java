@@ -10,7 +10,7 @@ public class KortingFactory {
 
     public Korting createKorting(KortingSoort soort, ArrayList<String> list) {
         Korting korting = null;
-
+//check of genoeg argumenten in list
         Double geld = Double.parseDouble(list.get(0));
         if(soort.equals(KortingSoort.DREMPEL)){
             if (list.get(2).isEmpty() || !list.get(2).matches("\\d{0,7}([\\.]\\d{0,2})?")){

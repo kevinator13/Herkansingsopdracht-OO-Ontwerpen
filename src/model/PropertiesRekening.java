@@ -12,39 +12,6 @@ public class PropertiesRekening {
     private HashMap<String, String> maptrue;
     private HashMap<String, String> maptext;
 
-
-    public void writePropertiesRekening(HashMap<String, String> listtext){
-        try
-        {
-            HashMap<String, String> map1 = new HashMap<>();
-            HashMap<String, String> map2 = new HashMap<>();
-
-            this.properties = new Properties();
-            for (Map.Entry<String, String> entry:listtext.entrySet()){
-                this.properties.setProperty(entry.getKey(), entry.getValue());
-                if (maptrue.keySet().contains(entry.getKey() )){
-                    map1.put(entry.getKey() , entry.getValue());
-                } else if (maptext.keySet().contains(entry.getKey() )){
-                    map2.put(entry.getKey() , entry.getValue());
-                }
-            }
-            this.maptrue = map1;
-            this.maptext = map2;
-
-
-
-
-            OutputStream out = new FileOutputStream(this.file);
-            this.properties.store(out,"Properties");
-        }
-        catch (Exception e ) {
-            e.printStackTrace();
-        }
-
-    }
-
-
-
     public void readPropertyRekening() {
 
         InputStream is;
@@ -88,6 +55,37 @@ public class PropertiesRekening {
         this.maptext.put("afsluitBoodschap.mode", afsluittext);
 
     }
+
+    public void writePropertiesRekening(HashMap<String, String> listtext){
+        try
+        {
+            HashMap<String, String> map1 = new HashMap<>();
+            HashMap<String, String> map2 = new HashMap<>();
+
+            this.properties = new Properties();
+            for (Map.Entry<String, String> entry:listtext.entrySet()){
+                this.properties.setProperty(entry.getKey(), entry.getValue());
+                if (maptrue.keySet().contains(entry.getKey() )){
+                    map1.put(entry.getKey() , entry.getValue());
+                } else if (maptext.keySet().contains(entry.getKey() )){
+                    map2.put(entry.getKey() , entry.getValue());
+                }
+            }
+            this.maptrue = map1;
+            this.maptext = map2;
+
+
+
+
+            OutputStream out = new FileOutputStream(this.file);
+            this.properties.store(out,"Properties");
+        }
+        catch (Exception e ) {
+            e.printStackTrace();
+        }
+
+    }
+
     public ArrayList<String> getTextRekening(){
         ArrayList<String> list = new ArrayList();
         list.add("algemene");

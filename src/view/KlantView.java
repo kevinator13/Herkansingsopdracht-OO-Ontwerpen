@@ -1,5 +1,6 @@
 package view;
 
+import controller.Controller;
 import db.Savable;
 import db.Savable2;
 import javafx.collections.ObservableList;
@@ -14,13 +15,12 @@ import model.Klant;
 import model.Korting;
 
 public class KlantView {
-    private Stage stage = new Stage();
-    private TableView table;
-    private ObservableList<Savable2> shoppingList;
-
-    public KlantView(ObservableList<Savable2> shoppingcar, ObservableList<Korting> kortings, Klant klant){
 
 
+
+    public KlantView(Controller controller, Klant klant){
+
+        Stage stage = new Stage();
         stage.setTitle("KLANT VIEW");
         stage.setResizable(false);
         stage.setX(775);
@@ -28,7 +28,7 @@ public class KlantView {
         Group root = new Group();
 
         Scene scene = new Scene(root, 500, 500);
-        BorderPane borderPane = new KlantMainPane(shoppingcar, kortings, klant);
+        BorderPane borderPane = new KlantMainPane(controller.getShop(), controller.getKortings(), klant);
         borderPane.prefHeightProperty().bind(scene.heightProperty());
         borderPane.prefWidthProperty().bind(scene.widthProperty());
         root.getChildren().add(borderPane);

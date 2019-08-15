@@ -9,18 +9,20 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class ArtikelExcel extends ExcelDBStrategy {
-    File file;
-    ObservableList<Savable> artikelList = FXCollections.observableArrayList(new ArrayList<>());
+
+    private ObservableList<Savable> artikelList = FXCollections.observableArrayList(new ArrayList<>());
+
+    public ArtikelExcel(ObservableList<Savable> list)
+    {
+        File file = new File(getFile());
+        this.setArtikelList(list);
+    }
 
     public void setArtikelList(ObservableList<Savable> artikelList) {
         this.artikelList = artikelList;
     }
 
-    public ArtikelExcel(ObservableList<Savable> list)
-    {
-        this.file = new File("resources/db/artikel.xls");
-        this.setArtikelList(list);
-    }
+
 
     @Override
     public String getFile() {
@@ -49,11 +51,7 @@ public class ArtikelExcel extends ExcelDBStrategy {
     public Savable convertStringToObject(ArrayList<String> velden) {
         if(velden.size()==5)
         {
-            Artikel object = new Artikel(velden.get(0), velden.get(1), velden.get(2), velden.get(3), velden.get(4));
-
-            Savable object2 = object;
-
-            return (Artikel)object2;
+            return new Artikel(velden.get(0), velden.get(1), velden.get(2), velden.get(3), velden.get(4));
         }
         else
         {

@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class ArtikelTXT extends TXTDBStrategy {
-    File file;
-    ObservableList<Savable> artikelList = FXCollections.observableArrayList(new ArrayList<>());
+
+    private ObservableList<Savable> artikelList = FXCollections.observableArrayList(new ArrayList<>());
 
     public void setArtikelList(ObservableList<Savable> artikelList) {
         this.artikelList = artikelList;
@@ -18,7 +18,7 @@ public class ArtikelTXT extends TXTDBStrategy {
 
     public ArtikelTXT(ObservableList<Savable> list)
     {
-        this.file = new File("resources/db/artikel.txt");
+        File file = new File(getFile());
         this.setArtikelList(list);
     }
 
@@ -49,11 +49,9 @@ public class ArtikelTXT extends TXTDBStrategy {
     public Savable convertStringToObject(String[] velden) {
         if(velden.length==5)
         {
-            Artikel object = new Artikel(velden[0], velden[1], velden[2], velden[3], velden[4]);
 
-            Savable object2 = object;
+            return new Artikel(velden[0], velden[1], velden[2], velden[3], velden[4]);
 
-            return (Artikel)object2;
         }
         else
         {
